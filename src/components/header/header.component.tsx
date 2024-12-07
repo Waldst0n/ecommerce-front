@@ -2,10 +2,11 @@
 import { BsCart3 } from 'react-icons/bs';
 // Css
 import './header.styles.css';
+import { HeaderContainer } from './header.styles';
 
 const Header = () => {
   return (
-    <div className="header-container">
+    <HeaderContainer>
       <h2 className="header-title">CLOTHING</h2>
 
       <div className="header-items">
@@ -17,7 +18,7 @@ const Header = () => {
           <span style={{ marginLeft: 5 }}>5</span>
         </div>
       </div>
-    </div>
+    </HeaderContainer>
   );
 };
 
