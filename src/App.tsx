@@ -1,10 +1,9 @@
-import { FunctionComponent } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 // Pages
 import Home from './pages/home.page';
 
-const App: FunctionComponent = () => {
+const App = () => {
   return (
     <BrowserRouter>
       <Routes>
