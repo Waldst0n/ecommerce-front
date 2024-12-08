@@ -7,7 +7,7 @@ import Category from '../../types/category.types';
 import CategoryItem from '../category-item/categoryItem.component';
 
 // Css
-import './categories.styles.css';
+import { CategoriesContainer, CategoriesContent } from './categories.style';
 
 // database
 import mockCategory from '../../data/data';
@@ -20,15 +20,15 @@ const Categories = () => {
   }, [mockCategory]);
 
   return (
-    <div className="categories-container">
-      <div className="categories-content">
+    <CategoriesContainer>
+      <CategoriesContent>
         {categories.map((category) => (
           <div key={category.id}>
             <CategoryItem category={category} />
           </div>
         ))}
-      </div>
-    </div>
+      </CategoriesContent>
+    </CategoriesContainer>
   );
 };
 
